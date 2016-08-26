@@ -1,0 +1,14 @@
+{
+  "name": "language-idf",
+  "version": "0.1.0-dev",
+  "description": "Syntax highlighting for EnergyPlus' idf files.",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/timtroendle/language-idf",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
