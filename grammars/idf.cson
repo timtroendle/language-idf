@@ -4,11 +4,19 @@
 'scopeName': 'text.idf'
 'name': 'IDF'
 'fileTypes': [
-  'idf'
+    'idf'
 ]
+'foldingStartMarker': '^[^!]*,'
+'foldingStopMarker': '^.*;.*$'
+
 'patterns': [
-  {
-    'match': '!.*$'
-    'name': 'comment'
-  }
+    {
+        'match': '!.*$'
+        'name': 'comment'
+    }
+    {
+        'name': 'meta.input'
+        'begin': '^[^!]*,'
+        'end': '^[^!]*;'
+    }
 ]
