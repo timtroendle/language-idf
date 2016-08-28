@@ -4,4 +4,4 @@
 '.text.idf':
   'editor':
     'commentStart': '! '
-    'increaseIndentPattern': '^([A-Z][^!,]*)\\s*,'
+    'increaseIndentPattern': '^([A-Z][^!,]*)\\s*,([^!;]|([^;]!.*))*$'
