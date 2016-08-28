@@ -1,7 +1,7 @@
 # If you want some examples of settings, check out:
 # https://github.com/atom/language-gfm/blob/master/settings/gfm.cson
 
-'.text.idf':
+'.source.idf':
   'editor':
     'commentStart': '! '
     'increaseIndentPattern': '^([A-Z][^!,]*)\\s*,([^!;]|([^;]!.*))*$'
