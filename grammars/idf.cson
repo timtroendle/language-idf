@@ -12,7 +12,7 @@
 'patterns': [
   {
     'match': '!.*$'
-    'name': 'comment'
+    'name': 'comment.line.idf'
   }
   {
     'name': 'meta.input'
@@ -20,7 +20,7 @@
     'end': ';'
     'beginCaptures':
       '1':
-        'name': 'entity.name.type'
+        'name': 'entity.name.type.idf'
     'patterns': [
       {
         'match': '[^!,;]*[a-zA-Z][^!,;]*'
@@ -34,7 +34,7 @@
       }
       {
         'match': '!.*'
-        'name': 'comment.line.inline'
+        'name': 'comment.line.inline.idf'
       }
     ]
   }
