@@ -1,0 +1,41 @@
+# If this is your first time writing a language grammar, check out:
+#   - http://manual.macromates.com/en/language_grammars
+
+'scopeName': 'source.idf'
+'name': 'IDF'
+'fileTypes': [
+  'idf'
+]
+'foldingStartMarker': '^[^!]*,'
+'foldingStopMarker': '^.*;.*$'
+
+'patterns': [
+  {
+    'match': '!.*$'
+    'name': 'comment.line.idf'
+  }
+  {
+    'name': 'meta.input'
+    'begin': '^([A-Z][^!,]*)\\s*,'
+    'end': ';'
+    'beginCaptures':
+      '1':
+        'name': 'entity.name.type.idf'
+    'patterns': [
+      {
+        'match': '[^!,;]*[a-zA-Z][^!,;]*'
+        'name': 'string.unquoted.idf'
+      }
+      {
+        'match': '(^|,|\\s*)\\s*(-?(0|[1-9][0-9]*)(\\.[0-9]*)?)\\s*'
+        'captures':
+          '2':
+            'name': 'constant.numeric.idf'
+      }
+      {
+        'match': '!.*'
+        'name': 'comment.line.inline.idf'
+      }
+    ]
+  }
+]
