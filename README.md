@@ -1,3 +1,3 @@
-# language-idf language package
+# IDF language package
 
-Syntax highlighting for EnergyPlus' idf files.
+Syntax highlighting for EnergyPlus' idf files in Atom.
