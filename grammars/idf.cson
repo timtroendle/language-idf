@@ -7,7 +7,7 @@
   'idf'
 ]
 'foldingStartMarker': '^[^!]*,'
-'foldingStopMarker': '^.*;.*$'
+'foldingStopMarker': '^[^!];.*$'
 
 'patterns': [
   {
@@ -15,8 +15,8 @@
     'name': 'comment.line.idf'
   }
   {
-    'name': 'meta.input'
-    'begin': '^([A-Z][^!,]*)\\s*,'
+    'name': 'meta.input.idf'
+    'begin': '^\\s*([A-Z][^!,]*)\\s*,'
     'end': ';'
     'beginCaptures':
       '1':
