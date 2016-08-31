@@ -10,6 +10,14 @@
     'name': 'comment.line.idd'
   }
   {
+    'match': '^[^!]*\\\\(group)\\s([^!]*)'
+    'captures':
+      '1':
+        'name': 'keyword.other.group-level-comment.idd'
+      '2':
+        'name': 'string.unquoted.idd'
+  }
+  {
     'name': 'meta.object.idd'
     'begin': '^\\s*([A-Z][^!]*)\\s*(,|;)'
     'end': '^\\s*$'
@@ -37,14 +45,6 @@
           '1':
             'name': 'keyword.other.field-level-comment.idd'
           '4':
-            'name': 'string.unquoted.idd'
-      }
-      {
-        'match': '[^!]*\\\\(group)\\s([^!]*)'
-        'captures':
-          '1':
-            'name': 'keyword.other.group-level-comment.idd'
-          '2':
             'name': 'string.unquoted.idd'
       }
       {
