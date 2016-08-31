@@ -1,7 +1,7 @@
 {
   "name": "language-idf",
-  "version": "0.1.2-dev",
-  "description": "Syntax highlighting for EnergyPlus' idf files in Atom.",
+  "version": "0.2.0-dev",
+  "description": "Editor support for EnergyPlus files in Atom.",
   "keywords": [
     "language",
     "grammar"

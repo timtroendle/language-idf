@@ -1,3 +1,3 @@
 # IDF language package
 
-Syntax highlighting for EnergyPlus' idf files in Atom.
+Editor support for EnergyPlus files (`.idf`, `.idd`) in Atom.

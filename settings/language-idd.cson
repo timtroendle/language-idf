@@ -1,0 +1,4 @@
+'.source.idd':
+  'editor':
+    'commentStart': '! '
+    'increaseIndentPattern': '^([A-Z][^!,]*)\\s*,([^!;]|([^;]!.*))*$'

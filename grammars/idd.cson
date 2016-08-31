@@ -1,0 +1,56 @@
+'scopeName': 'source.idd'
+'name': 'IDD'
+'fileTypes': [
+  'idd'
+]
+
+'patterns': [
+  {
+    'match': '!.*$'
+    'name': 'comment.line.idd'
+  }
+  {
+    'name': 'meta.object.idd'
+    'begin': '^\\s*([A-Z][^!]*)\\s*(,|;)'
+    'end': '^\\s*$'
+    'beginCaptures':
+      '1':
+        'name': 'entity.name.type.idd'
+    'patterns': [
+      {
+        'match': '^\\s*((A|N)[0-9]*)\\s*(,|;)'
+        'captures':
+          '1':
+            'name': 'string.unquoted.data-item.idd'
+      }
+      {
+        'match': '[^!]*\\\\(memo|unique-object|required-object|min-fields|obsolete|extensible[0-9]*|begin-extensible|format|reference-class-name)\\s([^!]*)'
+        'captures':
+          '1':
+            'name': 'keyword.other.object-level-comment.idd'
+          '2':
+            'name': 'string.unquoted.idd'
+      }
+      {
+        'match': '[^!]*\\\\(field|note|required-field||begin-extensible|units|ip-units|unitsBasedOnField|minimum(>)?|maximum(<)?|default|deprecated|autosizable|autocalculatable|type|retaincase|key|object-list|external-list|reference)\\s([^!]*)'
+        'captures':
+          '1':
+            'name': 'keyword.other.field-level-comment.idd'
+          '4':
+            'name': 'string.unquoted.idd'
+      }
+      {
+        'match': '[^!]*\\\\(group)\\s([^!]*)'
+        'captures':
+          '1':
+            'name': 'keyword.other.group-level-comment.idd'
+          '2':
+            'name': 'string.unquoted.idd'
+      }
+      {
+        'match': '!.*'
+        'name': 'comment.line.inline.idd'
+      }
+    ]
+  }
+]
