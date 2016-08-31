@@ -26,7 +26,7 @@
         'name': 'entity.name.type.idd'
     'patterns': [
       {
-        'match': '^\\s*((A|N)[0-9]*)\\s*(,|;)'
+        'match': '\\s*((A|N)[0-9]*)\\s*(,|;)'
         'captures':
           '1':
             'name': 'string.unquoted.data-item.idd'
