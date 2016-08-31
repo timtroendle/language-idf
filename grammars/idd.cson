@@ -32,7 +32,7 @@
             'name': 'string.unquoted.data-item.idd'
       }
       {
-        'match': '[^!]*\\\\(memo|unique-object|required-object|min-fields|obsolete|extensible[0-9]*|begin-extensible|format|reference-class-name)\\s([^!]*)'
+        'match': '[^!]*\\\\(memo|unique-object|required-object|min-fields|obsolete|extensible:[0-9]*|begin-extensible|format|reference-class-name)\\s([^!]*)'
         'captures':
           '1':
             'name': 'keyword.other.object-level-comment.idd'
